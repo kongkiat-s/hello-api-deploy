@@ -7,7 +7,7 @@ namespace: dev
 images:
 - name: hello-api
   newName: ksangdej/hello-api
-  newTag: 0.0.1-alpha-a564a926
+  newTag: 0.0.1-alpha-0eeaa7dc
 
 replicas:
 - count: 1
