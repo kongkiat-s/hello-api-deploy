@@ -7,8 +7,9 @@ namespace: dev
 images:
 - name: hello-api
   newName: ksangdej/hello-api
-  newTag: v0.0.1-alpha
 
 replicas:
-- name: dev-hello-api-deploy
-  count: 1
+- count: 1
+  name: dev-hello-api-deploy
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
