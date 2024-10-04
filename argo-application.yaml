@@ -11,7 +11,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: Kustomize/dev
-    repoURL: 'https://github.com/kongkiat-s/hello-api.git'
+    repoURL: 'https://github.com/kongkiat-s/hello-api-deploy.git'
     targetRevision: HEAD
   syncPolicy:
     automated: {}
