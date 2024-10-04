@@ -1,0 +1,17 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-api
+  namespace: argocd
+spec:
+  project: default
+  destination:
+    name: ''
+    namespace: dev
+    server: 'https://kubernetes.default.svc'
+  source:
+    path: Kustomize/dev
+    repoURL: 'https://github.com/kongkiat-s/hello-api.git'
+    targetRevision: HEAD
+  syncPolicy:
+    automated: {}

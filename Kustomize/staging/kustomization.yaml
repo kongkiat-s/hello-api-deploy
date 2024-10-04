@@ -1,0 +1,14 @@
+resources:
+- ../base
+
+namePrefix: staging-
+namespace: staging
+
+images:
+- name: hello-api
+  newName: ksangdej/hello-api
+  newTag: beta-0.0.1
+
+replicas:
+- name: staging-hello-api-deploy
+  count: 2

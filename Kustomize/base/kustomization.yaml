@@ -1,0 +1,10 @@
+resources:
+- deployment.yaml
+- service.yaml
+- ingress.yaml
+
+#secretGenerator:
+#- name: my-registry
+#  files:
+#    - secrets/.dockerconfigjson
+#  type: kubernetes.io/dockerconfigjson

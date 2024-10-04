@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-api-deploy
+  labels:
+    app: hello-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-api
+  template:
+    metadata:
+      labels:
+        app: hello-api
+    spec:
+      containers:
+      - name: hello-api
+        image: hello-api:latest
+        ports:
+        - containerPort: 8080
+          name: hello-api-svc
+#      imagePullSecrets:
+#      - name: my-registry

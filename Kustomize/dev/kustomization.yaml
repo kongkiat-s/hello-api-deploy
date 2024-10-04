@@ -1,0 +1,14 @@
+resources:
+- ../base
+
+namePrefix: dev-
+namespace: dev
+
+images:
+- name: hello-api
+  newName: ksangdej/hello-api
+  newTag: v0.0.1-alpha
+
+replicas:
+- name: dev-hello-api-deploy
+  count: 1
